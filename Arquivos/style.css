@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #DBFFFF;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	top: 0px;
+	box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+	background-color: #CFE7E7;	
+
+	text-align: center;
+	line-height: 50px;
+
+	color: #267E69;
+
+	font-size: 18px;
+  	font-weight: 800;
+}
+
+main {
+	width: 100vw;
+	height: calc(100vh - 100px);
+	min-height: 550px;
+}
+
+.principal {
+	margin: 0 auto;
+	padding: 50px;
+	max-width: 1000px;
+	height: calc(100% - 100px);
+}
+
+.opcoes label {
+	box-sizing: border-box;
+	position: absolute;
+	padding: 10px 0;
+
+	width: 150px;
+	height: 50px;
+	background: #DBFFFF;
+
+	border-style: solid;	
+	border-color: #A7A7A7;
+	
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;	
+	font-weight: 400;
+	color: #A7A7A7;
+
+	cursor: pointer;
+}
+
+.opcoes input{
+  	display:none;
+}
+
+.botao-cripto {
+	border-width: 1px 0px 1px 1px;
+	border-radius: 25px 0px 0px 25px;
+	
+	transition: 120ms;
+
+	right: 50%;
+}
+
+.botao-cripto.checked{
+	padding-top: 9px;
+
+	border: 2px solid #267E69;
+
+	font-weight: 700;
+	color: #267E69;
+
+	cursor: default;
+}
+
+.botao-descripto {	
+	border-width: 1px 1px 1px 0px;
+	border-radius: 0px 25px 25px 0px;
+
+	transition: 120ms;
+
+	left: 50%;
+}
+
+.botao-descripto.checked {
+	padding-top: 9px;
+
+	border: 2px solid #267E69;
+
+	font-weight: 700;
+	color: #267E69;
+
+	cursor: default;
+}
+
+.caixas {
+	position: relative;
+
+	width: 100%;
+	min-width: 620px;
+	height: 400px;
+
+	margin: 0 auto;
+
+	display: flex;
+}
+
+.entrada {
+	position: relative;
+	width: calc(50% - 12.5px);
+	height: 100%;
+}
+
+.saida {
+	position: relative;
+	width: calc(50% - 12.5px);
+	height: calc(100% - 100px);
+	margin: 100px 0 0 25px;
+}
+
+.caixas img {
+	position: absolute;
+	width: 150px;
+	bottom: 75px;
+	left: calc(50% - 55px);
+
+	opacity: 0.03;
+}
+
+.caixas textarea {
+	position: absolute;
+
+	width: calc(100% - 70px);
+	height: calc(100% - 205px);
+	bottom: 0;
+
+	padding: 35px 35px 70px;
+
+	border-radius: 35px;
+	border-style: none;
+	outline: none;
+
+	font-family: 'Montserrat';
+	font-size: 16px;
+	color: #267E69;	
+
+	resize: none;
+}
+
+.caixas button {	
+	position: absolute;
+
+	width: 50px;
+	height: 50px;
+
+	border-style: none;
+	border-radius: 50%;
+
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+	cursor: pointer;
+}
+
+.entrada textarea.fundo {
+	background: #3FE1BA;
+}
+
+.entrada textarea {	
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0);	
+}
+
+.entrada button {	
+	background: url(executar.svg);
+
+	right: 10px;
+	bottom: 10px;
+}
+
+.saida textarea.fundo {
+	background: #CFE7E7;
+}
+
+.texto-copiado {
+	position: absolute;
+	width: 103px;
+	height: 17px;
+	right: 70px;
+	bottom: 26px;
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #267E69;
+}
+
+.saida textarea {
+	background: rgba(0, 0, 0, 0);
+	box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.05);
+
+	height: calc(100% - 105px);
+
+	left: 0;
+	top: 0;
+
+	cursor: default;
+}
+
+.saida button {	
+	background: url(copiar.svg);
+
+	right: 10px;
+	bottom: 10px;
+}
+
+footer {
+	position: relative;
+
+	width: 100%;
+	height: 50px;
+
+
+	background: #CFE7E7;
+	box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 50px;
+	
+	text-align: center;
+
+	color: #267E69;
+}
+
+
+@media screen and (max-width: 720px) {
+	html, body, header, main, footer {
+		min-width: 285px;
+	}
+
+	h1 {
+		min-width: 240px;
+	}
+
+	main {
+		width: 100%;
+		height: calc(100vh - 100px);
+	}
+
+	.principal {
+		margin: 0 auto;
+		padding: 50px 25px;
+		width: calc(100% - 50px);
+		height: calc(100% - 100px);
+	}
+
+	.opcoes label {
+		width: 50%;
+	}
+
+	.botao-cripto {
+		min-width: 130px;
+		max-width: 340px;
+	}
+
+	.botao-descripto {
+		min-width: 130px;
+		max-width: 340px;
+	}
+
+	.caixas {
+		width: 100%;
+		max-width: 680px;
+		min-width: 260px;
+		height: 100%;
+
+		display: block;
+	}
+
+	.caixas img {
+		left: calc(50% - 55px);
+		bottom: calc(50% - 75px);
+		width: 150px;
+	}
+
+	.entrada img {
+		bottom: calc(50% - 75px - 50px);
+	}
+
+	.caixas textarea {
+		width: calc(100% - 70px);
+		height: calc(100% - 105px);
+
+		position: absolute;
+	}
+
+	.entrada {
+		width: 100%;
+		height: calc(50% - 12.5px + 50px);
+	}
+
+	.entrada textarea {
+		height: calc(100% - 205px);
+	}
+
+	.saida {
+		width: 100%;
+		height: calc(50% - 12.5px - 50px);
+		margin: 25px 0 0;
+		top: 0;
+	}
+
+	.saida button {	
+		bottom: 10px;
+	}
+
+	footer {
+		bottom: 0;
+	}
+}
+
+@media screen and (max-height: 720px) and (max-width: 720px) {
+	.caixas img {
+		width: 120px;
+		left: calc(50% - 50px);
+		bottom: calc(50% - 63.6px);
+	}
+
+	.entrada img {
+		bottom: calc(50% - 63.6px - 50px);
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.principal {
+		max-width: 1200px;
+	}
+
+	.caixas {
+		height: 500px;
+	}
+
+	.caixas img {
+		width: 200px;
+		left: calc(50% - 70px);
+		bottom: 100px;
+	}
+
+	.opcoes label {
+		width: 200px;
+	}
+}

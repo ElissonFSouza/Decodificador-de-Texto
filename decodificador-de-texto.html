@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+
+		<title>Decodificador de Texto</title>
+
+		<link rel="stylesheet" href="Arquivos/reset.css">
+		<link rel="stylesheet" href="Arquivos/style.css">
+	</head>
+
+	<body>
+		<header>
+			<h1>Decodificador de Texto</h1>
+		</header>
+
+		<main>
+			<div class="principal">
+				<div class="caixas">
+					<div class="entrada">
+						<div class="opcoes">
+							<label class="botao-cripto"><input id="botao1" type="radio" name="modo" checked/>Criptografar</label>
+							<label class="botao-descripto"><input id="botao2" type="radio" name="modo"/>Descriptografar</label>
+						</div>								
+						<textarea class="fundo" disabled></textarea>
+						<img src="Arquivos/aberto.svg">
+						<textarea class="texto" placeholder="Digite seu texto" autocomplete="off" spellcheck="false" maxlength="380" autofocus></textarea>
+						<button type="button"></button>
+					</div>
+					<div class="saida">
+						<textarea class="fundo" disabled></textarea>
+						<p class="texto-copiado"></p>			
+						<img src="Arquivos/fechado.svg">
+						<textarea class="texto" readonly></textarea>
+						<button type="button"></button>					
+					</div>					
+				</div>
+			</div>			
+		</main>
+
+		<footer>
+			<p class="copyright">&copy; Copyright Élisson Souza - 2023</p>
+		</footer>
+
+		<script src="Arquivos/index.js"></script>
+	</body>
+</html>
