@@ -8,8 +8,8 @@ Este decodificador consiste em criptografar e descriptografar o texto do usuári
 - A letra "o" é convertida para "ober";
 - A letra "u" é convertida para "ufat".
 
-Neste projeto foram utilizados HTML5, CSS3 e JavaScript.  
-A página principal é o arquivo "index.html", e seus arquivos auxiliares, como imagens, páginas de scripts e estilo, estão na pasta "Arquivos".  
+Neste projeto foi utilizado HTML5, CSS3 e JavaScript.  
+A página principal é o arquivo "index.html". E os arquivos auxiliares (imagens, páginas de scripts e estilos) estão na pasta "Arquivos".  
 
 Segue link do projeto no GitHub pages para visualização da página:  
 https://elissonfsouza.github.io/Decodificador-de-texto/
