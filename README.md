@@ -1,5 +1,5 @@
 # Decodificador de Texto
-**Um simples decodificador de texto em HTML proposto no 1º desafio do curso de programação ofertado pela Oracle Next Education em parceria com a Alura.**  
+**Um simples decodificador de texto proposto no 1º desafio do curso de programação ofertado pela Oracle Next Education em parceria com a Alura.**  
 
 Este decodificador consiste em criptografar e descriptografar o texto do usuário através do método proposto no desafio, onde as "chaves" utilizadas são:
 - A letra "e" é convertida para "enter";
