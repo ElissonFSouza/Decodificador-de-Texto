@@ -12,4 +12,4 @@ Neste projeto foi utilizado HTML5, CSS3 e JavaScript.
 A página principal é o arquivo "index.html". E os arquivos auxiliares (imagens, páginas de scripts e estilos) estão na pasta "Arquivos".  
 
 Segue link do projeto no GitHub Pages para a visualização da página:  
-https://elissonfsouza.github.io/Decodificador-de-texto/
+https://elissonfsouza.github.io/Decodificador-de-Texto/
